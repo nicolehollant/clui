@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+
+:root {
+  --animation-duration: 1s;
+  --animation-delay: 0s;
+  --animation-repeat: 1;
+  --animation-timing-fn: ease;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+body, html {
+  font-family: Inter;
+}
+
+body,
+html,
+#__nuxt {
+  @apply h-full w-full bg-black text-white overflow-auto bg-gradient-to-br from-black to-neutral-900;
+}
+
+
+.animation-duration-500 {
+  --animation-duration: 0.5s
+}
+.animation-duration-750 {
+  --animation-duration: 0.75s
+}
+.animation-duration-1000 {
+  --animation-duration: 1s
+}
+.animation-duration-1500 {
+  --animation-duration: 1.5s
+}
+.animation-duration-2000 {
+  --animation-duration: 2s
+}
+
+.animation-delay-100 {
+  --animation-delay: 0.1s
+}
+.animation-delay-200 {
+  --animation-delay: 0.2s
+}
+.animation-delay-300 {
+  --animation-delay: 0.3s
+}
+.animation-delay-500 {
+  --animation-delay: 0.5s
+}
+.animation-delay-1000 {
+  --animation-delay: 1s
+}
+.animation-repeat-1 {
+  --animation-repeat: 1
+}
+.animation-repeat-2 {
+  --animation-repeat: 2
+}
+.animation-repeat-infinite {
+  --animation-repeat: infinite
+}
+.animation-timing-ease-in {
+  --animation-timing-fn: ease-in
+}
+.animation-timing-ease-out {
+  --animation-timing-fn: ease-out
+}
+.animation-timing-ease-in-out {
+  --animation-timing-fn: ease-in-out
+}
+.animation-timing-linear {
+  --animation-timing-fn: linear
+}

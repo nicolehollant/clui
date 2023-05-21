@@ -1,0 +1,27 @@
+{
+  "title": "Convert To Mp4",
+  "description": "converts video to mp4",
+  "dependencies": ["ffmpeg"],
+  "tags": ["video", "conversion", "ffmpeg"],
+  "cwd": "@CWD",
+  "inputs": [
+    {
+      "name": "[inputFile]",
+      "type": "file",
+      "value": null
+    },
+    {
+      "name": "[outputFileName]",
+      "type": "string",
+      "value": "~/Downloads/@NOW.mp4"
+    }
+  ],
+  "commandBuilder": "ffmpeg -i [inputFile] [outputFileName]",
+  "outputs": [
+    {
+      "name": "outputFile",
+      "type": "file",
+      "value": null
+    }
+  ]
+}

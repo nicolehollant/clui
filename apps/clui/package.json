@@ -1,0 +1,44 @@
+{
+  "build": {
+    "appId": "com.senp-ui.crudify.app",
+    "productName": "CLUI"
+  },
+  "name": "clui",
+  "version": "0.0.1",
+  "description": "command line ui",
+  "author": "nicole hollant",
+  "private": true,
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "build": "nuxi build --prerender && electron-builder",
+    "build:mac": "nuxi build --prerender && electron-builder -m",
+    "build:windows": "nuxi build --prerender && electron-builder -w",
+    "build:linux": "nuxi build --prerender && electron-builder -l",
+    "build:all": "nuxi build --prerender && electron-builder -mwl",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.6.8",
+    "@types/node": "^18.16.7",
+    "electron": "^24.3.0",
+    "electron-builder": "^23.6.0",
+    "nuxt": "^3.4.3",
+    "nuxt-electron": "^0.4.5",
+    "vite-electron-plugin": "^0.8.2",
+    "vite-plugin-electron-renderer": "^0.14.2"
+  },
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.9",
+    "fix-path": "^3.0.0",
+    "fuse.js": "^6.6.2",
+    "highlight.js": "^11.8.0",
+    "nuxt-icon": "^0.4.0",
+    "senp-ui": "^0.1.0",
+    "zod": "^3.21.4"
+  }
+}
