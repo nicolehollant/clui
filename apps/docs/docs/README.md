@@ -6,7 +6,7 @@ heroText: CLUI
 tagline: Streamline Your CLI Workflows. Maximize Your Efficiency.
 actions:
   - text: Download
-    link: /guide/getting-started.html
+    link: https://github.com/nicolehollant/clui/releases
     type: primary
   - text: Quick Start
     link: /guide/

@@ -11,7 +11,7 @@ export default defineUserConfig({
     navbar: [
       {
         text: 'Download',
-        link: '#',
+        link: 'https://github.com/nicolehollant/clui/releases',
       },
     ],
   }),
